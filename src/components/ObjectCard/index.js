@@ -5,8 +5,6 @@ function ObjectCard({ products, cart, setCart }) {
     const prodId = +e.target.parentNode.id;
     const newProd = products.filter((produto) => produto.code === prodId);
     setCart([...cart, ...newProd]);
-    console.log(prodId);
-    console.log(newProd);
   };
 
   return (

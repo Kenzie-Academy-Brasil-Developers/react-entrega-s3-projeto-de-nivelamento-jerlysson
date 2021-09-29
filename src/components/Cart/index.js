@@ -11,12 +11,13 @@ function Cart({ cart }) {
     <BoxCart>
       <h3>Carrinho! </h3>
       <p>Valor Total: R$ {TotalPrice.toFixed(2)}</p>
-
       <p>Desconto Total: R$ {TotalDiscount.toFixed(2)}</p>
       <p>Total a Pagar: R$ {ValorApagar.toFixed(2)}</p>
+
       {cart.map((prod, idx) => (
         <div key={idx}>
           <p>Nome: {prod.name}</p>
+          <p>Desconto: {prod.discount}</p>
           <p>Valor: {prod.price}</p>
         </div>
       ))}

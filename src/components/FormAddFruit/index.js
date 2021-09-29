@@ -5,6 +5,9 @@ function FormAddFruit({ setProducts, products }) {
   const { register, handleSubmit } = useForm();
 
   const handleClick = (data) => {
+    data.code = +data.code;
+    data.price = +data.price.replace(",", ".");
+    data.discount = +data.discount.replace(",", ".");
     setProducts([...products, data]);
   };
 
