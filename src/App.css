@@ -1,0 +1,16 @@
+body {
+  background: rgb(223, 208, 208);
+}
+input {
+  height: 2em;
+}
+button {
+  background: rgb(19, 167, 19);
+  height: 2em;
+  cursor: pointer;
+}
+.App {
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
+}
