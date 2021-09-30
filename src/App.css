@@ -1,5 +1,7 @@
 body {
+  margin: 0 auto;
   background: rgb(223, 208, 208);
+  max-width: 1200px;
 }
 input {
   height: 2em;

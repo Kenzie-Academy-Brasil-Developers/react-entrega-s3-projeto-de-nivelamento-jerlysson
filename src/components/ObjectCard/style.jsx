@@ -13,7 +13,12 @@ export const BoxCard = styled.div`
     @media (max-width: 500px) {
       width: 70%;
     }
+    @media (max-width: 700px) and (min-width: 500px) {
+      width: 45%;
+    }
+
     margin: 1%;
+    max-height: 320px;
     width: 30%;
     border: 1px solid black;
   }
